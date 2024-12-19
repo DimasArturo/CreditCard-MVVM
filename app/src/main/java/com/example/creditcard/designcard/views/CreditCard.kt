@@ -32,6 +32,7 @@ import com.example.creditcard.designcard.livedata.CreditCardViewModel
 @Composable
 fun CreditCard(creditCardViewModel: CreditCardViewModel) {
 
+
     var creditCardNumberValue by rememberSaveable { mutableStateOf("0000-0000-0000-0000") }
 
     creditCardViewModel.cardNumber.observe(LocalLifecycleOwner.current){ newValue ->
